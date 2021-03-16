@@ -1,0 +1,24 @@
+package figure;
+
+import java.util.Scanner;
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+
+		int num = 1;
+		
+		System.out.print("정사각형 한 변의 길이: ");
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		int[][] nums = new int[n][n];
+		
+		for(int i=0; i<n; i++)
+			for(int j=0; j<n; j++) {
+				nums[j][i] = num++; 
+				System.out.println(nums[j][i]);
+			}
+
+	}	
+
+}
