@@ -39,7 +39,7 @@ public class NumberSquare2 {
 				}
 			} else {
 				for(int j=m-1; j>=0; j--) {
-					System.out.printf("%d ", nums[i][(4-j)]);
+					System.out.printf("%d ", nums[i][(m-1-j)]);
 				}
 			}
 			
