@@ -1,0 +1,36 @@
+package beginner;
+
+import java.util.Scanner;
+
+public class CharNumber2 {
+
+	public static void main(String[] args) {
+
+		System.out.print("정사각형 한 변의 길이 n을 입력하세요: ");
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		int[][] nums = new int[n][n];
+		
+		int sum = 0;
+		for(int i=0; i<n; i++) 	
+			for(int j=0; j<n; j++) {
+				// 열은 고정한 채 행이 변화함에 따라 1씩 증가시키기
+				// 홀수열일 때는 짝수열일 때와 반대 순서로 배열에 값 담기
+				if(j % 2 == 0) {
+					nums[j][i] = (char) 'A' + sum;
+				} else {
+					nums[j][i] = 'A' + sum;
+				}	
+				
+				sum++;
+			}
+		
+		
+		
+		
+		
+		System.out.printf("%c", 'A'+ 1);
+		
+	}
+
+}

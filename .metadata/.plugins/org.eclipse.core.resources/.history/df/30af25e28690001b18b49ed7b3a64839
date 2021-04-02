@@ -1,0 +1,25 @@
+package beginner;
+
+import java.util.Scanner;
+
+public class CharNumber1 {
+
+	public static void main(String[] args) {
+
+		System.out.print("정사각형 한 변의 길이 n을 입력하세요: ");
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		char[][] chars = new char[n][n];
+		
+		chars[n-1][n-1] = 'A';
+		for(int i=0; i<n; i++) 
+			for(int j=0; j<n; j++) {
+				i++;
+				System.out.printf("%c ", chars[4-i][4-j]);
+			}
+			
+		
+		
+	}
+
+}

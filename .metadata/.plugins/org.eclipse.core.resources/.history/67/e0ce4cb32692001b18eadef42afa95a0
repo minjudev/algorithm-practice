@@ -1,0 +1,25 @@
+package beginner;
+
+import java.util.Scanner;
+
+public class TimesTable {
+
+	public static void main(String[] args) {
+
+		System.out.print("출력하고 싶은 구구단의 시작 범위와 끝 범위를 입력하세요: ");
+		Scanner scan = new Scanner(System.in);
+		int s = scan.nextInt();
+		int e = scan.nextInt();
+		
+		for(int i=0; i<9; i++) {
+			if(s*(i+1) % 10 == s*(i+1))
+				System.out.printf("%d * %d =  %d   ", s, i+1, s*(i+1));
+
+			System.out.printf("%d * %d = %d   ", s, i+1, s*(i+1));
+			
+			if(i%3 == 2) System.out.println();
+		}
+		
+	}
+
+}

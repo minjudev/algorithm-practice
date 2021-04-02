@@ -1,0 +1,16 @@
+package beginner;
+
+import java.util.Scanner;
+
+public class TimesTable {
+
+	public static void main(String[] args) {
+
+		System.out.print("출력하고 싶은 구구단의 시작 범위와 끝 범위를 입력하세요: ");
+		Scanner scan = new Scanner(System.in);
+		int s = scan.nextInt();
+		int e = scan.nextInt();
+		
+	}
+
+}
